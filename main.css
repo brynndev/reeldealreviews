@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+body{
+	background:url("movie bg.png") no-repeat fixed top right;
+}
+#container{
+width: 800px;
+	margin: 0 auto;
+	background-color:rgba(246,190,194,.6);
+}
+.left{
+	width:380px;
+	height:200px;
+	background-color:rgba(232,85,97,0.50);
+	border-radius: 25px;
+	float: left;
+	margin: 0px 10px 0px 15px;
+	padding: 30px 30px 30px 30px;
+	border: solid rgba(244,167,173,2.00);
+	visibilty: hidden;
+}
+
+.right{
+	width:380px;
+	height:200px;
+	background-color:rgba(232,85,97,0.50);
+	border-radius: 25px;
+	float: left;
+	margin: 0px 0px 10px 0px;
+	padding: 30px 30px 30px 30px;
+	border: solid rgba(244,167,173,2.00);
+}
+footer{
+	background-color:rgba(235,104,115,.50);
+	clear: both;
+}
+header > h1{
+	text-align: center; 
+	color: #fff;
+}
