@@ -3,6 +3,13 @@
 *{
 	box-sizing: border-box;
 }
+a:link{
+	color: azure;
+	text-decoration: none;
+}
+a:hover{
+	font-size: 1.2em;
+}
 body{
 	background:url("movie bg.png") no-repeat fixed top right;
 }
@@ -40,4 +47,9 @@ footer{
 header > h1{
 	text-align: center; 
 	color: #fff;
+}
+.atma-regular {
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
