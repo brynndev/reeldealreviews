@@ -3,13 +3,8 @@
 *{
 	box-sizing: border-box;
 }
-a:link{
-	color: azure;
-	text-decoration: none;
-}
-a:hover{
-	font-size: 1.2em;
-}
+
+
 body{
 	background:url("movie bg.png") no-repeat fixed top right;
 }
@@ -53,3 +48,39 @@ header > h1{
   font-weight: 400;
   font-style: normal;
 }
+		table, th, td {
+		  border: 2.5px solid pink;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+	th {
+  background-color: #FB79E6;
+  color: white;
+}
+		tr:nth-child(even) {
+  background-color: #FBCAE9;
+}
+		ul {
+  background:#FFC5E7;
+  padding: 20px;
+}
+		ul li {
+  background:#FF45CC;
+  color: white;
+  margin: 5px;
+}
+		ol {
+			background:#F617E1;
+				padding: 15px;
+		}
+		ol li {
+			color:white;
+			margin: 5px;
+			}
