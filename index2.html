@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>contact page</title>
+<link rel="stylesheet" href="main2.css">
+</head>
+<h1 style="font-size:60px; color:white; text-align:center;" >Contact</h1>
+<body>
+	<h2 style="font-size:30px; color:black; text-align:center;">Send Me A Message</h2>
+<form action="/action_page.php" target="_self">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+	<p>Favorite Movie Genre:</p>
+  <input type="radio" id="Comedy" name="fav_genre" value="Horror">
+  <label for="comedy">Comedy</label><br>
+  <input type="radio" id="Horror" name="fav_genre2" value="Comedy">
+  <label for="horror">Horror</label><br>
+  <input type="radio" id="Drama" name="fav_genre3" value="Drama">
+  <label for="drama">Drama</label><br>
+  <input type="radio" id="Sci-Fi" name="fav_genre4" value="Sci-Fi">
+  <label for="Sci-Fi">Sci-Fi</label><br>
+  <input type="radio" id="Musical" name="fav_genre5" value="Musical">
+  <label for="Musical">Musical</label><br>
+  <input type="radio" id="Romance" name="fav_genre6" value="Romance">
+  <label for="romance">Romance</label><br>
+  <input type="radio" id="Action" name="fav_genre7" value="Action">
+  <label for="action">Action</label><br>
+  <input type="radio" id="Other" name="fav_genre8" value="Other">
+  <label for="Other">Other</label>
+<p>Email Address</p>
+	<label for="email">Enter Here:</label>
+  <input type="email" id="email" name="email">
+	<p>Message</p>
+  <textarea name="message" style="width:300px; height:300px;"></textarea>
+  <br>
+  <input type="submit" value="submit">
+</form>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+	<audio controls autoplay>
+  <source src="Send Me A Message.m4a" type="Send Me A Message">
+  <source src="Send Me A Message.m4a" type="send me a message">
+Your browser does not support the audio element.
+</audio>
+
+
+</body>
+</html>

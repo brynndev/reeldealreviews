@@ -3,84 +3,44 @@
 *{
 	box-sizing: border-box;
 }
-
-
-body{
-	background:url("movie bg.png") no-repeat fixed top right;
+body {
+	background: url("movie bg.png") no-repeat fixed top right;
 }
-#container{
-width: 800px;
+container {
+	width: 800px;
 	margin: 0 auto;
-	background-color:rgba(246,190,194,.6);
 }
-.left{
-	width:380px;
-	height:200px;
-	background-color:rgba(232,85,97,0.50);
-	border-radius: 25px;
+.left {
+	width: 380px;
+	height: 200px;
+	background-color: rgba(233,118,127,1.00);
+	border-radius: 20px;
 	float: left;
-	margin: 0px 10px 0px 15px;
-	padding: 30px 30px 30px 30px;
-	border: solid rgba(244,167,173,1.50);
-	visibilty: hidden;
 }
-
-.right{
-	width:380px;
-	height:200px;
-	background-color:rgba(232,85,97,0.50);
-	border-radius: 25px;
-	float: left;
-	margin: 0px 0px 10px 0px;
-	padding: 30px 30px 30px 30px;
-	border: solid rgba(244,167,173,2.00);
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
-footer{
-	background-color:rgba(235,104,115,.50);
-	clear: both;
+.main-navigation {
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: 1px rgba(237,124,134,1.00);
+	font-family: sans-serif;
+	}
+.main-navigation ul {
+	margin: 0;
 }
-header > h1{
-	text-align: center; 
-	color: #fff;
+.main-navigation ul li {
+	display: inline-block;
 }
-.atma-regular {
-  font-family: "Atma", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.main-navigation ul li a {
+	padding: 17px 37px;
+	text-decoration: none;
+	display: inline-block;
+	color:white;
 }
-		table, th, td {
-		  border: 2.5px solid pink;
+.main-navigation ul li a:hover {
+	text-decoration:underline;
 }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td {
-  text-align: center;
-}
-	th {
-  background-color: #FB79E6;
-  color: white;
-}
-		tr:nth-child(even) {
-  background-color: #FBCAE9;
-}
-		ul {
-  background:#FFC5E7;
-  padding: 20px;
-}
-		ul li {
-  background:#FF45CC;
-  color: white;
-  margin: 5px;
-}
-		ol {
-			background:#F617E1;
-				padding: 15px;
-		}
-		ol li {
-			color:white;
-			margin: 5px;
-			}
