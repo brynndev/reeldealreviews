@@ -32,3 +32,30 @@ input[type=button], input[type=submit], input[type=reset] {
   margin: 4px 2px;
   cursor: pointer;
 }
+.main-navigation {
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: 1px rgba(237,124,134,1.00);
+	font-family: sans-serif;
+	}
+.main-navigation ul {
+	margin: 0;
+}
+.main-navigation ul li {
+	display: inline-block;
+}
+.main-navigation ul li a {
+	padding: 17px 37px;
+	text-decoration: none;
+	display: inline-block;
+	color:white;
+}
+.main-navigation ul li a:hover {
+	text-decoration:underline;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
