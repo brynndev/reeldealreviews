@@ -9,6 +9,7 @@
 	<ul>
 		<li><a href="index2.html">Contact</a></li>
 		<li><a href="">Page To Screen</a></li>
+		<li><a href="index.html">Home</a></li>
 		<li><a href="index4.html">About</a></li>
 		<li><a href="" target="">Best Movie Series</a></li>
 		<li><a href="" target="">Themed Watchlists</a></li>
@@ -16,23 +17,66 @@
 	</nav>
 </head>
 	<script>
+		const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+		
+		
 	</script>
 </html>
 <html>
 <body>
 	<h1 class="h1">Movies Coming Out This Week!</h1>
-	<div class="flex-conatiner">
-	<div style="flex-grow: 1"><img src="images/smashingmachine.jpg" alt="TheSmashingMachine"></div>
-	<div style="flex-grow: 1"><img src="images/roofman.jpg" alt="Roofman"></div>
-	<div style="flex-grow: 1"><img src="images/soulonfire.jpg" alt="SoulOnFire"></div>
-	</div>
-	
-	
-	<div class="flex-container2">
-	<div style="flex-grow: 1">The Smashing Machine</div>
-	<div style="flex-grow: 1">Roofman</div>
-	<div style="flex-grow: 1">Soul On Fire</div>
-	</div>
+	<div class="gallery">
 
+<div class="gallery-item">
+  <a target="_blank" href="images/regretting you.jpg">
+    <img src="images/regretting you.jpg" alt="Regretting You" width="1000" height="800">
+  </a>
+  <div class="desc">Regretting You</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="images/springsteen.jpg">
+    <img src="images/springsteen.jpg" alt="Springsteen" width="1000" height="800">
+  </a>
+  <div class="desc">Springsteen: Deliever Me From Nowhere</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="images/black phone 2.jpg">
+    <img src="images/black phone 2.jpg" alt="Black Phone 2" width="1000" height="800">
+  </a>
+  <div class="desc">Black Phone 2</div>
+</div>
+
+</div>
+<div id="container">
+<header><h1 class="h1">Funny Movie Facts</h1></header>	
+	<section>
+    <article class="right"></article>
+	</section>
+</div>
+<h1 class="h1">Where are you viewing from?</h1>
+<p>Click below to see!</p>
+
+<button onclick="getLocation()">Where Am I?</button>
+
+<p id="demo"></p>
 </body>
 </html>
