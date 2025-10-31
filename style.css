@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background: url("movie bg.png") no-repeat fixed top right;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ff6f91;
+}
+.main-navigation {
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: 1px rgba(237,124,134,1.00);
+	font-family: sans-serif;
+	}
+.main-navigation ul {
+	margin: 0 auto;
+}
+.main-navigation ul li {
+	display: inline-block;
+}
+.main-navigation ul li a {
+	padding: 17px 37px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+}
+.main-navigation ul li a:hover {
+	text-decoration:underline;
+}
+
+
+/* Watchlist Section */
+main {
+  padding: 40px 20px;
+}
+
+.watchlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.watchlist-card {
+  background-color: #d86a7a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.watchlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.watchlist-card h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.watchlist-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .watchlist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watchlist-card {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .h1 {
+	color:rgba(255,255,255,1.00);
+	font-family:"Lucida Grande";
+	font-size: 30px;
+	}
