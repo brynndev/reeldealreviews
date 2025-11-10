@@ -2,35 +2,11 @@
 <html>
 <head>
 <style>
-.container {
-  display: flex;
-  background-color:#FA8AA9;
-}
-
-.container div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 24px;
-}
-	.flex-container {
-		display: flex;
-		flex-direction: column;
-		background-color:#FA8AA9;
-		}
-	.flex-container div {
-		background-color: #f1f1f1;
-		margin: 10px;
-		padding: 20px;
-		font-size: 24px;
-	}
 	</style>
 <meta charset="UTF-8">
 <title>about</title>
      <img src="images/logo.png" margin="auto" alt="" width="600" height="300">
-<link style="stylesheet" href="jquery-ui.css">
-<link style="stylesheet" href="jquery-ui.structure.css">
-<link style="stylesheet" href="jquery-ui.theme.css">
+<link style="stylesheet" href="about.css">
 	<nav class="main-navigation" align="center">
 	<ul>
 		<li><a href="index2.html">Contact</a></li>
@@ -43,21 +19,47 @@
 	</nav>
 </head>
 <body>
-	<h1>My Fav Movies</h1>
-<div class="container">
-	<div>Avengers: Infinity War</div>
-	<div>The Greatest Showman</div>
-	<div>Star Wars: Revenge of The Sith</div>
-	<div>Don't Worry Darling</div>
-	<div>The Notebook</div>
-</div>
-	<h1>My Favorite TV Shows</h1>
-<div class="flex-container">
-	<div>The Vampire Diaries</div>
-	<div>Grey's Anatomy</div>
-	<div>Chicago Fire</div>
-	<div>Station 19</div>
-	<div>The Summer I Turned Pretty</div>
-</div>
+	<main>
+    <h2 class="page-title">ABOUT ME</h2>
+
+    <section class="about-grid">
+      <div class="profile-pic">
+        <img src="your-photo.jpg" alt="Your photo">
+      </div>
+
+      <div class="about-text">
+        <p>I am a girl from Texas who grew up watching movies with my movie critic father. My love for movies has only grown since then and now I want to share all things movies with you!</p>
+      </div>
+
+      <div class="favorites">
+        <h3>Top 5 Favorite Movies</h3>
+        <ul>
+          <li><strong>The Greatest Showman</strong></li>
+          <li><strong>Star Wars Episode III Revenge of The Sith</strong></li>
+          <li><strong>The Longest Ride</strong></li>
+          <li><strong>Don’t Worry Darling</strong></li>
+          <li><strong>Avengers: Endgame</strong></li>
+        </ul>
+      </div>
+
+      <div class="hobbies">
+        <h3>If I’m not watching movies, I’m…</h3>
+        <ul>
+          <li>Reading</li>
+          <li>Hanging out with my boyfriend</li>
+          <li>Taking photos</li>
+          <li>Building legos</li>
+          <li>Napping</li>
+          <li>With my dog</li>
+        </ul>
+      </div>
+
+      <div class="quote">
+        <p>“Why do you want to marry me for anyhow?”<br>
+        “So I can kiss you whenever I want.”<br>
+        <em>- Sweet Home Alabama</em></p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
