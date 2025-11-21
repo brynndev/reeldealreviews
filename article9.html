@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Hunger Games Series</title>
+	<link rel="stylesheet" href="style7.css">
+</head>
+<script>
+let position = 0;
+
+function moveCarousel(direction) {
+  const track = document.querySelector(".carousel-track");
+  const items = document.querySelectorAll(".carousel-item");
+
+  const visibleItems = 2;
+  const itemWidth = items[0].offsetWidth;
+
+  const maxPosition = items.length - visibleItems;
+
+  position += direction;
+
+  if (position < 0) position = 0;
+  if (position > maxPosition) position = maxPosition;
+
+  track.style.transform = `translateX(-${position * itemWidth}px)`;
+}
+</script>
+
+<body>
+	<header>
+	 <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
+        <nav class="main-navigation" align="center">
+            <ul>
+                <li><a href="index2.html">Contact</a></li>
+                <li><a href="index3.html">Page To Screen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index4.html">About</a></li>
+                <li><a href="index5.html">Best Movie Series</a></li>
+                <li><a href="index6.html">Themed Watchlists</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="poster-carousel-section">
+  <h2 class="h1">The Hunger Games Series Timeline</h2>
+	<p class="series-description">The story starts decades before Katniss, showing how the Hunger Games began and how Snow rose to power. Years later, Katniss enters the arena, and her defiance ignites a rebellion that ultimately brings down the Capitol.</p>
+
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <img src="images/theballad.jpg" alt="The Ballad of Songbirds &amp;
+Snakes">
+        <h3 class="movie-title">The Ballad of Songbirds &amp; Snakes</h3>
+        <p class="movie-year">2023</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/sunrisereaping.jpg" alt="Sunrise On The Reaping">
+        <h3 class="movie-title">Sunrise On The Reaping</h3>
+        <p class="movie-year">2026</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/thehungergames.jpg" alt="The Hunger Games">
+        <h3 class="movie-title">The Hunger Games</h3>
+        <p class="movie-year">2012</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/catchingfire.jpg" alt="Catching Fire">
+        <h3 class="movie-title">Catching Fire</h3>
+        <p class="movie-year">2013</p>
+      </div>
+		  <div class="carousel-item">
+        <img src="images/mockingjay pt 1.jpg" alt="Mockingjay Part 1">
+        <h3 class="movie-title">Mockingjay - Part 1</h3>
+        <p class="movie-year">2014</p>
+      </div>
+		  <div class="carousel-item">
+        <img src="images/mocking jay pt 2.jpg" alt="Mockingjay Part 2">
+        <h3 class="movie-title">Mockingjay - Part 2</h3>
+        <p class="movie-year">2015</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+<section class="fun-fact-box">
+  <h2 class="fun-title">Fun Fact</h2>
+  <p class="fun-text">The idea came from watching TV! According to author Suzanne Collins, she came up with the idea for the book whilst channel hopping between reality TV and news coverage, and it made her think about the way in which news of war and crime has become entertainment, and the two concepts blurred in her head because she was tired, creating the idea for the books.
+
+</p>
+</section>
+<div class="character-row">
+
+<div class="char-box">
+    <img class="char-image" src="images/finnick.jpg" alt="Finnick Odair">
+    <div class="char-info">
+        <div class="char-name">Character Highlight</div>
+        <div class="char-description">
+         Finnick Odair is the Capitol’s charming victor with a fighter’s heart. Beneath his polished image lies a survivor shaped by loss, loyalty, and quiet bravery. His skill, honesty, and devotion to Annie make him one of the trilogy’s most unforgettable heroes.
+        </div>
+    </div>
+</div>
+
+<div class="costume-box">
+    <img class="costume-image" src="images/girlonfire.jpg" alt="Costume Photo">
+    <div class="costume-info">
+        <div class="costume-title">Iconic Outfit</div>
+        <div class="costume-description">
+     Cinna’s “Girl on Fire” dress is one of the most striking looks in the series. The fitted black gown bursts into vibrant, controlled flames, turning Katniss into a living symbol of power and defiance. In a single moment, she captures Panem’s attention—transforming from an overlooked tribute into the face of something bigger than the Games.
+        </div>
+    </div>
+</div>
+	</div>
+	
+	   <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Reel Deal Reviews</p>
+            <div class="footer-links">
+                <a href="index2.html">Contact</a>
+                <a href="index3.html">Page To Screen</a>
+                <a href="index.html">Home</a>
+                <a href="index4.html">About</a>
+                <a href="index5.html">Best Movie Series</a>
+                <a href="index6.html">Themed Watchlists</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

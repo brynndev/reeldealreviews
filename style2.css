@@ -1,35 +1,27 @@
 @charset "UTF-8";
 /* CSS Document */
-/* styles.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+	box-sizing: border-box;
 }
-
 body {
 	background: url("movie bg.png") no-repeat fixed top right;
 }
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2em;
-  color: #ff6f91;
-}
-
-header p {
-  font-size: 1.1em;
-  color: #555;
+#container {
+    width: 900px;
+    margin: 0 auto; 
 }
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
 }
+.h1 {
+    color: white;
+    font-family: "Lucida Grande";
+    font-size: 30px;
+    text-align: center;
+}
+
 .main-navigation {
 	font-size: 16px;
 	font-weight: 400;
@@ -51,46 +43,111 @@ img {
 .main-navigation ul li a:hover {
 	text-decoration:underline;
 }
-.movie-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+
+.h1 {
+	color:rgba(255,255,255,1.00);
+	font-family:"Lucida Grande";
+	font-size: 30px;
+	text-align: center;
 }
 
-.movie-card {
-  background-color: #ffd1a1;
-  border-radius: 10px;
-  padding: 15px;
-  max-width: 250px;
-  flex: 1 1 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
+.form-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 40px;
+  background: rgba(255, 170, 175, 0.85);
+  border-radius: 15px;
 }
 
-.movie-card h2 {
-  font-size: 1.2em;
-  color: #e87a84;
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.movie-card img {
+.left-section, .right-section {
+  width: 48%;
+}
+
+/* Inputs */
+input, textarea {
   width: 100%;
-  border-radius: 8px;
-  margin: 10px 0;
+  padding: 10px;
+  background: #d8d8d8;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-.movie-card p {
-  font-size: 0.95em;
-  color: #444;
+textarea {
+  height: 300px;
+  resize: none;
+}
+.genres {
+    width: 100%;
 }
 
-/* Responsive stacking for phones */
-@media (max-width: 600px) {
-  .movie-grid {
-    flex-direction: column;
+.genre-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.genre-row label {
+    display: flex;
     align-items: center;
-  }
+    gap: 6px;
+}
 
-  .movie-card {
-    max-width: 90%;
-  }
+
+.graphic-center {
+  text-align: center;
+  margin: 25px 0;
+	margin-top: -40px;
+}
+
+.graphic-center img {
+  width: 600px;   
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background: #FFD1A1;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+    background: #E87A84;
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-content p {
+    color: white;
+    margin: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}

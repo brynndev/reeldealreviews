@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Twilight Series</title>
+	<link rel="stylesheet" href="style7.css">
+</head>
+<script>
+let position = 0;
+
+function moveCarousel(direction) {
+  const track = document.querySelector(".carousel-track");
+  const items = document.querySelectorAll(".carousel-item");
+
+  const visibleItems = 2;
+  const itemWidth = items[0].offsetWidth;
+
+  const maxPosition = items.length - visibleItems;
+
+  position += direction;
+
+  if (position < 0) position = 0;
+  if (position > maxPosition) position = maxPosition;
+
+  track.style.transform = `translateX(-${position * itemWidth}px)`;
+}
+</script>
+
+<body>
+	<header>
+	 <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
+        <nav class="main-navigation" align="center">
+            <ul>
+                <li><a href="index2.html">Contact</a></li>
+                <li><a href="index3.html">Page To Screen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index4.html">About</a></li>
+                <li><a href="index5.html">Best Movie Series</a></li>
+                <li><a href="index6.html">Themed Watchlists</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="poster-carousel-section">
+  <h2 class="h1">Twilight Series Timeline</h2>
+	<p class="series-description">The series follows Bella Swan as she falls in love with vampire Edward Cullen, becomes entangled in werewolf conflicts, and ultimately faces dangerous supernatural forces that push her toward a life-changing destiny.</p>
+
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <img src="images/twilight.jpg" alt="Twilight">
+        <h3 class="movie-title">Twilight</h3>
+        <p class="movie-year">2008</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/newmoon.jpg" alt="New Moon">
+        <h3 class="movie-title">New Moon</h3>
+        <p class="movie-year">2009</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/eclipse.jpg" alt="Eclipse">
+        <h3 class="movie-title">Eclipse</h3>
+        <p class="movie-year">2010</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/breakingdawnpt1.jpg" alt="Breaking Dawn Part 1">
+        <h3 class="movie-title">Breaking Dawn Part 1</h3>
+        <p class="movie-year">2011</p>
+      </div>
+		  <div class="carousel-item">
+        <img src="images/breakingdawnpt2.jpg" alt="Breaking Dawn Part 2">
+        <h3 class="movie-title">Breaking Dawn Part 2</h3>
+        <p class="movie-year">2012</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+<section class="fun-fact-box">
+  <h2 class="fun-title">Fun Fact</h2>
+  <p class="fun-text">Kristen Stewart had to wear contacts in the films. In the books, Bella is famously described as having brown eyes. Kirsten Stewart, however, has green eyes, which meant she had to wear contacts throughout the films! She also dons a red pair when her character turns into a vampire. Hopefully they weren't too itchy!</p>
+</section>
+<div class="character-row">
+
+<div class="char-box">
+    <img class="char-image" src="images/alicecullen.jpg" alt="Alice Cullen">
+    <div class="char-info">
+        <div class="char-name">Character Highlight</div>
+        <div class="char-description">
+          Alice Cullen is the stylish, future-seeing heartbeat of the Cullen family. Her optimism, loyalty, and sharp instincts make her one of the saga’s most unforgettable characters.
+        </div>
+    </div>
+</div>
+
+<div class="costume-box">
+    <img class="costume-image" src="images/bellaprom.jpg" alt="Costume Photo">
+    <div class="costume-info">
+        <div class="costume-title">Iconic Outfit</div>
+        <div class="costume-description">
+        Bella’s cobalt-blue halter dress is one of her most iconic looks, paired with a cream embroidered cardigan for effortless elegance. Even with a leg brace, she stays true to her style by wearing a Converse and comfy Capri leggings under the dress.
+        </div>
+    </div>
+</div>
+	</div>
+	
+	   <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Reel Deal Reviews</p>
+            <div class="footer-links">
+                <a href="index2.html">Contact</a>
+                <a href="index3.html">Page To Screen</a>
+                <a href="index.html">Home</a>
+                <a href="index4.html">About</a>
+                <a href="index5.html">Best Movie Series</a>
+                <a href="index6.html">Themed Watchlists</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

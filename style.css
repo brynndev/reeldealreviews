@@ -108,3 +108,33 @@ main {
 	font-family:"Lucida Grande";
 	font-size: 30px;
 	}
+	.footer {
+    background: #E87A84;
+    padding: 15px 0;     
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.2s ease-in-out;
+    font-size: 0.9rem;
+}
+	.footer-links a: hover {
+    color: #FFB3BC;
+}

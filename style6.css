@@ -1,27 +1,29 @@
 @charset "UTF-8";
 /* CSS Document */
-*{
-	box-sizing: border-box;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
 	background: url("movie bg.png") no-repeat fixed top right;
 }
-#container {
-	width: 800px;
-	margin: 0 auto;
-}
-Body{ 
-		background: url("movie bg.png") no-repeat fixed top right;
-			}
-	#container{
-		width: 992px;
-		margin: auto;
-	}	
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ff6f91;
 }
 .main-navigation {
 	font-size: 16px;
@@ -45,41 +47,98 @@ img {
 	text-decoration:underline;
 }
 
-.h1 {
-	color:rgba(255,255,255,1.00);
-	font-family:"Lucida Grande";
-	font-size: 30px;
-	text-align: left;
+
+/* Watchlist Section */
+main {
+  padding: 40px 20px;
 }
-.movie-grid {
+
+.watchlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.watchlist-card {
+  background-color: #FFD1A1;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.watchlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.watchlist-card h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.watchlist-card img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .watchlist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watchlist-card {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .h1 {
+    color: rgba(255,255,255,1.00);
+    font-family: "Lucida Grande";
+    font-size: 30px;
+  }
+} /* ← THIS closes the media query!! */
+
+
+/* Footer — now it works on all screen sizes */
+.footer {
+  background: #E87A84;
+  padding: 15px 0;     
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2rem;
+  gap: 25px;
+  font-size: 0.9rem;
 }
 
-.movie {
-  text-align: center;
+.footer-content p {
+  color: #ffffff;
+  margin: 0;
 }
 
-.movie img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid white;
-  transition: transform 0.3s ease;
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.2s ease-in-out;
+  font-size: 0.9rem;
 }
 
-.movie img:hover {
-  transform: scale(1.05);
-}
-
-.movie p {
-  font-size: 1rem;
-  margin-top: 0.7rem;
-  color: white;
-  font-weight: 500;
+.footer-links a:hover {
+  color: #FFB3BC;
 }

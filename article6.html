@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pirates of the Caribbean Series</title>
+	<link rel="stylesheet" href="style7.css">
+</head>
+<script>
+let position = 0;
+
+function moveCarousel(direction) {
+  const track = document.querySelector(".carousel-track");
+  const items = document.querySelectorAll(".carousel-item");
+
+  const visibleItems = 2;
+  const itemWidth = items[0].offsetWidth;
+
+  const maxPosition = items.length - visibleItems;
+
+  position += direction;
+
+  if (position < 0) position = 0;
+  if (position > maxPosition) position = maxPosition;
+
+  track.style.transform = `translateX(-${position * itemWidth}px)`;
+}
+</script>
+
+<body>
+	<header>
+	 <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
+        <nav class="main-navigation" align="center">
+            <ul>
+                <li><a href="index2.html">Contact</a></li>
+                <li><a href="index3.html">Page To Screen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index4.html">About</a></li>
+                <li><a href="index5.html">Best Movie Series</a></li>
+                <li><a href="index6.html">Themed Watchlists</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="poster-carousel-section">
+  <h2 class="h1">Pirates of the Caribbean Series Timeline</h2>
+	<p class="series-description">The story follows Jack Sparrow as he battles cursed crews, vengeful pirates, sea monsters, and supernatural forces while crossing paths with Will, Elizabeth, and later Henry Turner—each adventure raising the stakes across the seas of the Caribbean.</p>
+
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="carousel-track">
+      <div class="carousel-item">
+        <img src="images/curse of the black pearl.jpg" alt="Curse of The Black Pearl">
+        <h3 class="movie-title">The Curse Of The Black Pearl</h3>
+        <p class="movie-year">2003</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/dead mans chest.jpg" alt="Dead Man's Chest">
+        <h3 class="movie-title">Dead Man's Chest</h3>
+        <p class="movie-year">2006</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/atworldsend.jpg" alt="At World's End">
+        <h3 class="movie-title">At World's End</h3>
+        <p class="movie-year">2007</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/on stranger tides.jpg" alt="On Stranger Tides">
+        <h3 class="movie-title">On Stranger Tides</h3>
+        <p class="movie-year">2011</p>
+      </div>
+		  <div class="carousel-item">
+        <img src="images/deadmantellnotales.jpg" alt="Dead Men Tell No Tales">
+        <h3 class="movie-title">Dead Men Tell No Tales</h3>
+        <p class="movie-year">2017</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+<section class="fun-fact-box">
+  <h2 class="fun-title">Fun Fact</h2>
+  <p class="fun-text">The fourth installation, On Stranger Tides, was the most expensive film ever made at the time, not adjusted for inflation. The budget ran to $300,000,000. That's more than the budget of all three Lord Of The Rings films combined.</p>
+</section>
+<div class="character-row">
+
+<div class="char-box">
+    <img class="char-image" src="images/jacksparrow.jpg" alt="Jack Sparrow">
+    <div class="char-info">
+        <div class="char-name">Character Highlight</div>
+        <div class="char-description">
+          Captain Jack Sparrow is the most iconic character in the series, known for his wit,
+          unpredictability, and unforgettable charm.
+        </div>
+    </div>
+</div>
+
+<div class="costume-box">
+    <img class="costume-image" src="images/swann pajamas.jpg" alt="Costume Photo">
+    <div class="costume-info">
+        <div class="costume-title">Iconic Outfit</div>
+        <div class="costume-description">
+        Nothing says Gothic Romance quite like a billowing white nightgown. Even if the first Pirates of the Caribbean is ultimately an action-adventure, the ghost story tinges make it appropriate from some genre-y costuming. Elizabeth spends a good amount of time in this nightgown and what a lovely nightgown it is.
+        </div>
+    </div>
+</div>
+	</div>
+	
+	   <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Reel Deal Reviews</p>
+            <div class="footer-links">
+                <a href="index2.html">Contact</a>
+                <a href="index3.html">Page To Screen</a>
+                <a href="index.html">Home</a>
+                <a href="index4.html">About</a>
+                <a href="index5.html">Best Movie Series</a>
+                <a href="index6.html">Themed Watchlists</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

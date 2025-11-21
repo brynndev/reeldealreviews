@@ -1,124 +1,271 @@
 @charset "UTF-8";
-/* CSS Document */
-*{
-	box-sizing: border-box;
-}
-body {
-	background: url("movie bg.png") no-repeat fixed top right;
-}
-#container {
-	width: 800px;
-	margin: 0 auto;
-}
-.left {
-	width: 380px;
-	height: 200px;
-	background-color: rgba(233,118,127,1.00);
-	border-radius: 20px;
-	float: left;
-}
-@media only screen and (max-width: 600px) {
-	Body{ 
-		background: url("movie bg.png") no-repeat fixed top right;
-			}
-	#container{
-		width: 600px;
-		margin: auto;
-	}
-	div.gallery{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		}
-	div.gallery-item{
-		width: calc(50%-20px);
-	}
-	
-	
+
+* {
+    box-sizing: border-box;
 }
 
-@media only screen and (min-width: 768px){
-		Body{ 
-		background: url("movie bg.png") no-repeat fixed top right;
-			}
-	#container{
-		width: 768px;
-		margin: auto;
-	}
-	div.gallery{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
+body {
+    background: url("movie bg.png") no-repeat fixed top right;
 }
-@media only screen and (min-width: 992px) {
-Body{ 
-		background: url("movie bg.png") no-repeat fixed top right;
-			}
-	#container{
-		width: 992px;
-		margin: auto;
-	}	
+
+#container {
+    width: 800px;
+    margin: 0 auto;
 }
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
+
 .main-navigation {
-	font-size: 16px;
-	font-weight: 400;
-	border-bottom: 1px rgba(237,124,134,1.00);
-	font-family: sans-serif;
-	}
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px rgba(237,124,134,1);
+    font-family: sans-serif;
+    text-align: center;
+}
+
 .main-navigation ul {
-	margin: 0 auto;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .main-navigation ul li {
-	display: inline-block;
+    display: inline-block;
 }
+
 .main-navigation ul li a {
-	padding: 17px 37px;
-	text-decoration: none;
-	display: inline-block;
-	color: white;
+    padding: 17px 37px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
 }
+
 .main-navigation ul li a:hover {
-	text-decoration:underline;
+    text-decoration: underline;
 }
 
 .h1 {
-	color:rgba(255,255,255,1.00);
-	font-family:"Lucida Grande";
-	font-size: 30px;
-	text-align: left;
+    color: white;
+    font-family: "Lucida Grande";
+    font-size: 30px;
+    text-align: center;
 }
-div.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-div.gallery-item {
-  margin: 5px;
-  border: 15px solid #FD7486;
-  width: 180px;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
 }
 
-div.gallery-item img {
-  width: 100%;
-  height: auto;
+.coming-soon h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-div.gallery-item div.desc {
-  padding: 0px;
-  text-align: center;
+.movie-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
-.right{
-	width: 300px;
-	height: 200px;
-	background-color: #FFD1A1;
-	border-radius: 20px;
-	float: right;
+
+.movie-card {
+    background-color: #E87A84;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
+
+.movie-card img {
+    width: 280px;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.movie-card p {
+    color: white;
+    font-size: 14px;
+}
+
+.trailer-btn {
+    background: #FFB3BC;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+.trailer-btn:hover {
+    transform: translateY(-3px);
+}
+
+.fact-review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.left-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box-title {
+    background: rgba(0,0,0,0.25);
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0;
+    font-size: 1.1rem;
+}
+
+.movie-fact-box {
+    background: #FFD1A1;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    color: white;
+    overflow: hidden;
+}
+
+.fact-content {
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+.featured-review-box {
+    width: 50%;
+    text-align: center;
+}
+
+.review-card {
+    background: #E87A84;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.review-card img {
+    width: 35%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.review-text {
+    margin-top: 1rem;
+    color: white;
+}
+
+.review-btn {
+    background: #FFB3BC;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.review-btn:hover {
+    background: #ff9fae;
+}
+
+.film-term-box {
+    background: #E87A84;
+    margin-top: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.trivia-box {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.trivia-box label {
+    display: block;
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.trivia-btn {
+    background: #FFB3BC;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.trivia-result {
+    margin-top: 12px;
+    font-weight: bold;
+}
+.footer {
+    background: #E87A84;
+    padding: 15px 0;     
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.2s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #FFB3BC;
+}
+
+@media (max-width: 900px) {
+    .fact-review-container {
+        flex-direction: column;
+    }
+
+    .featured-review-box,
+    .left-column {
+        width: 100%;
+    }
+
+    .movie-flex {
+        flex-direction: column;
+    }
+}
+
+

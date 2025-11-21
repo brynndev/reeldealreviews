@@ -1,82 +1,174 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Reel Deal Reviews</title>
-<img src="images/logo.png" margin="auto" alt="" width="600" height="300">
-<link rel="stylesheet" href="main.css">
-	<nav class="main-navigation" align="center">
-	<ul>
-		<li><a href="index2.html">Contact</a></li>
-		<li><a href="">Page To Screen</a></li>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="index4.html">About</a></li>
-		<li><a href="">Best Movie Series</a></li>
-		<li><a href="index6.html">Themed Watchlists</a></li>
-			</ul>
-	</nav>
+    <meta charset="UTF-8">
+    <title>Reel Deal Reviews</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-	<script>
-		const x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+<script>
+function checkTrivia() {
+    const answer = document.querySelector('input[name="trivia"]:checked');
+    const result = document.querySelector('.trivia-result');
 
-function success(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
+    if (!answer) {
+        result.textContent = "Please select an answer!";
+        result.style.color = "yellow";
+        return;
+    }
 
-function error() {
-  alert("Sorry, no position available.");
+    if (answer.value === "A") {
+        result.textContent = "Correct! 🎉 Toy Story (1995) was the first fully CGI-animated movie.";
+        result.style.color = "#4CFF4C";
+    } else {
+        result.textContent = "Incorrect. Try again! 😉";
+        result.style.color = "#FF6B6B";
+    }
 }
-		
-		
-	</script>
-</html>
-<html>
+</script>
+
 <body>
-	<h1 class="h1">Movies Coming Out This Week!</h1>
-	<div class="gallery">
+    <header>
+        <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
+        <nav class="main-navigation" align="center">
+            <ul>
+                <li><a href="index2.html">Contact</a></li>
+                <li><a href="index3.html">Page To Screen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index4.html">About</a></li>
+                <li><a href="index5.html">Best Movie Series</a></li>
+                <li><a href="index6.html">Themed Watchlists</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="gallery-item">
-  <a target="_blank" href="images/regretting you.jpg">
-    <img src="images/regretting you.jpg" alt="Regretting You" width="1000" height="800">
-  </a>
-  <div class="desc">Regretting You</div>
-</div>
+    <div class="main-container">
+        <section class="coming-soon">
+            <h2>COMING TO THEATERS SOON!</h2>
 
-<div class="gallery-item">
-  <a target="_blank" href="images/springsteen.jpg">
-    <img src="images/springsteen.jpg" alt="Springsteen" width="1000" height="800">
-  </a>
-  <div class="desc">Springsteen: Deliever Me From Nowhere</div>
-</div>
+            <div class="movie-flex">
+                <div class="movie-card">
+                    <img src="images/wicked for good.jpg" alt="Wicked: For Good">
+                    <a href="https://www.youtube.com/watch?v=vt98AlBDI9Y" class="trailer-btn" target="_blank">
+                        <span>Watch Trailer</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <img src="images/zootopia 2.jpeg" alt="Zootopia 2">
+                    <a href="https://www.youtube.com/watch?v=A-7RMaQaygI" class="trailer-btn" target="_blank">
+                        <span>Watch Trailer</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <img src="images/eternity.jpg" alt="Eternity">
+                    <a href="https://www.youtube.com/watch?v=irXTps1REHU" class="trailer-btn" target="_blank">
+                        <span>Watch Trailer</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<div class="gallery-item">
-  <a target="_blank" href="images/black phone 2.jpg">
-    <img src="images/black phone 2.jpg" alt="Black Phone 2" width="1000" height="800">
-  </a>
-  <div class="desc">Black Phone 2</div>
-</div>
+        <div class="fact-review-container">
 
-</div>
-<div id="container">
-<header><h1 class="h1">Funny Movie Facts</h1></header>	
-	<section>
-    <article class="right"></article>
-	</section>
-</div>
-<h1 class="h1">Where are you viewing from?</h1>
-<p>Click below to see!</p>
+            <!-- LEFT COLUMN -->
+            <div class="left-column">
 
-<button onclick="getLocation()">Where Am I?</button>
+                <div class="movie-fact-box">
+                    <h2 class="h1 box-title">WEEKLY MOVIE FACT</h2>
+                    <div class="fact-content">
+                        Those prominent, breathtaking shots of cornfields in Interstellar weren't crafted with CGI. Director Christopher Nolan insisted on having 500 acres of real corn planted for the movie, and the filmmakers even turned a profit by selling the corn they didn't destroy while filming.
+                    </div>
+                </div>
 
-<p id="demo"></p>
+                <div class="movie-fact-box">
+                    <h2 class="h1 box-title">WEEKLY MOVIE QUOTE</h2>
+                    <div class="fact-content">
+                        “I feel the need… the need for speed!” — <em>Top Gun</em>
+                    </div>
+                </div>
+
+                <div class="movie-fact-box">
+                    <h2 class="h1 box-title">WEEKLY MOVIE TRIVIA</h2>
+
+                    <div class="fact-content trivia-box">
+                        <p class="trivia-question">
+                            Which movie was the first fully CGI-animated feature film?
+                        </p>
+
+                        <form id="triviaForm">
+                            <label><input type="radio" name="trivia" value="A"> A. Toy Story</label><br>
+                            <label><input type="radio" name="trivia" value="B"> B. Shrek</label><br>
+                            <label><input type="radio" name="trivia" value="C"> C. A Bug’s Life</label><br>
+                            <label><input type="radio" name="trivia" value="D"> D. Monsters, Inc.</label><br>
+
+                            <button type="button" class="trivia-btn" onclick="checkTrivia()">Submit</button>
+                        </form>
+
+                        <p class="trivia-result"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="featured-review-box">
+
+                <div class="review-card">
+                    <h1 class="h1 box-title">FEATURED REVIEW OF THE WEEK</h1>
+
+                    <img src="images/runningman.jpg" alt="The Running Man Poster">
+                    <p class="review-text">
+                        Edgar Wright’s <i>The Running Man</i> is a bold, more faithful reimagining of Stephen King’s dystopian tale. Glen Powell delivers a grounded and gripping lead performance—absolutely worth the watch.
+                        — The Cinemen
+                    </p>
+                    <a href="https://thecinemen.com/2025/11/13/the-running-man/" class="review-btn">Read Full Review</a>
+                </div>
+
+                <div class="review-card film-term-box">
+                    <h1 class="h1 box-title">FILM TERM OF THE WEEK</h1>
+
+                    <p class="review-text" style="text-align:center;">
+                        <strong>Cross-cutting</strong><br><br>
+                         <em>Cross-cutting</em> film editing technique that alternates between two or more scenes in different locations, creating the impression that they are happening at the same time.
+                    </p>
+
+                    <a href="https://www.youtube.com/watch?v=KmptU7vEkNU"
+                       class="review-btn"
+                       target="_blank">
+                       See Example Here
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Reel Deal Reviews</p>
+            <div class="footer-links">
+                <a href="index2.html">Contact</a>
+                <a href="index3.html">Page To Screen</a>
+                <a href="index.html">Home</a>
+                <a href="index4.html">About</a>
+                <a href="index5.html">Best Movie Series</a>
+                <a href="index6.html">Themed Watchlists</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
+
