@@ -15,9 +15,11 @@ header {
   margin-bottom: 30px;
 }
 
-header h1 {
-  font-size: 2em;
-  color: #ff6f91;
+.h1 {
+    color: #E87A84;
+    font-family: "Lucida Grande";
+    font-size: 30px;
+    text-align: center;
 }
 
 header p {

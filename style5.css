@@ -19,7 +19,12 @@ img {
   margin: 0 auto;
   width: 40%;
 }
-
+.h1 {
+    color: #E87A84;
+    font-family: "Lucida Grande";
+    font-size: 30px;
+    text-align: center;
+}
 .main-navigation {
   font-size: 16px;
   font-weight: 400;
