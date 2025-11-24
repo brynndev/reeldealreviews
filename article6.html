@@ -81,11 +81,31 @@ function moveCarousel(direction) {
     <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
   </div>
 </section>
+<div class="info-section">
 
-<section class="fun-fact-box">
-  <h2 class="fun-title">Fun Fact</h2>
-  <p class="fun-text">The fourth installation, On Stranger Tides, was the most expensive film ever made at the time, not adjusted for inflation. The budget ran to $300,000,000. That's more than the budget of all three Lord Of The Rings films combined.</p>
-</section>
+    <div class="fun-fact-box">
+        <h2 class="char-title">Fun Fact</h2>
+        <p>The fourth installation, On Stranger Tides, was the most expensive film ever made at the time, not adjusted for inflation. The budget ran to $300,000,000. That's more than the budget of all three Lord Of The Rings films combined.</p>
+    </div>
+
+    <div class="soundtrack-box">
+        <h2 class="char-title">Best Song From The Series</h2>
+
+        <div class="audio-row">
+            <button class="play-btn" onclick="document.getElementById('audio').play();">
+                ▶
+            </button>
+            <span class="song-title">“He's A Pirate”</span>
+        </div>
+		<p>It’s the franchise’s most iconic theme — instantly recognizable, super energetic, and perfectly captures the adventurous, chaotic spirit of Jack Sparrow. The melody is bold and swashbuckling, and it basically defines the sound of the entire series.</p>
+
+        <audio id="audio">
+            <source src="audio/piratesaudio.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</div>
 <div class="character-row">
 
 <div class="char-box">

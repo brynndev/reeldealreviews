@@ -25,7 +25,11 @@ function moveCarousel(direction) {
   track.style.transform = `translateX(-${position * itemWidth}px)`;
 }
 </script>
-
+<script>
+document.querySelector(".play-btn").addEventListener("click", () => {
+    document.getElementById("marvel-audio").play();
+});
+</script>
 <body>
 	<header>
 	 <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
@@ -42,7 +46,7 @@ function moveCarousel(direction) {
     </header>
 <section class="poster-carousel-section">
   <h2 class="h1">Marvel Series Timeline</h2>
-	<p class=series-description>The Infinity War timeline follows the Avengers as they race to stop Thanos from collecting the six Infinity Stones. </p>
+	<p class="series-description">The Infinity War timeline follows the Avengers as they race to stop Thanos from collecting the six Infinity Stones. </p>
 
   <div class="carousel-container">
     <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
@@ -161,23 +165,39 @@ function moveCarousel(direction) {
         <h3 class="movie-title">Avengers: Endgame</h3>
         <p class="movie-year">2019</p>
       </div>
-		  <div class="carousel-item">
-        <img src="images/spiderman far from home.jpg" alt="Far From Home">
-        <h3 class="movie-title">Spider-Man: Far From Home</h3>
-        <p class="movie-year">2019</p>
-      </div>
-    </div>
 
     <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
   </div>
 </section>
 
-<section class="fun-fact-box">
-  <h2 class="fun-title">Fun Fact</h2>
-  <p class="fun-text">Stan Lee, the legendary co-creator of Marvel Comics, has left an indelible mark on the MCU through his iconic cameo appearances. What began as a fun tradition evolved into a beloved Easter egg for fans, with Lee popping up in unexpected roles across numerous films. From a mailman to a beauty pageant judge, his cameos remain a touching tribute to his enduring legacy.
+<div class="info-section">
 
-</p>
-</section>
+    <!-- FUN FACT BOX -->
+    <div class="fun-fact-box">
+        <h2 class="char-title">Fun Fact</h2>
+        <p>Stan Lee, the legendary co-creator of Marvel Comics, has left an indelible mark on the MCU through his iconic cameo appearances. What began as a fun tradition evolved into a beloved Easter egg for fans, with Lee popping up in unexpected roles across numerous films. From a mailman to a beauty pageant judge, his cameos remain a touching tribute to his enduring legacy.</p>
+    </div>
+
+    <!-- SOUNDTRACK BOX -->
+    <div class="soundtrack-box">
+        <h2 class="char-title">Best Song From The Series</h2>
+
+        <div class="audio-row">
+            <button class="play-btn" onclick="document.getElementById('audio').play();">
+                ▶
+            </button>
+            <span class="song-title">“Come And Get Your Love”</span>
+        </div>
+		<p>“Come and Get Your Love” stands out because it instantly sets the playful, carefree tone of Guardians of the Galaxy and perfectly captures Star-Lord’s personality. It’s upbeat, memorable, and became one of the most iconic music moments in the MCU.</p>
+
+        <audio id="audio">
+            <source src="audio/marvelaudio.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</div>
+
 <div class="character-row">
 
 <div class="char-box">

@@ -112,11 +112,31 @@ function moveCarousel(direction) {
     <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
   </div>
 </section>
+<div class="info-section">
 
-<section class="fun-fact-box">
-  <h2 class="fun-title">Fun Fact</h2>
-  <p class="fun-text">James Earl Jones says he recorded all his Darth Vader lines in a day, Jones finished the task for the first film in just 2 1/2 hours. He got $7,500 for it, which is like earning $3,000 every hour — pretty good, especially when you think Harrison Ford got just $10,000 for all his work in Star Wars: Episode IV — A New Hope. Jones later said, "I wanted to make Darth Vader more interesting, more subtle, more psychologically oriented. And he [George Lucas] said, ‘No. no. What we’re finding out is you’ve got to keep his voice on a very narrow ban of inflection because he ain’t human, really.’ So, that was the answer.”</p>
-</section>
+    <div class="fun-fact-box">
+        <h2 class="char-title">Fun Fact</h2>
+        <p>James Earl Jones says he recorded all his Darth Vader lines in a day, Jones finished the task for the first film in just 2 1/2 hours. He got $7,500 for it, which is like earning $3,000 every hour — pretty good, especially when you think Harrison Ford got just $10,000 for all his work in Star Wars: Episode IV — A New Hope. Jones later said, "I wanted to make Darth Vader more interesting, more subtle, more psychologically oriented. And he [George Lucas] said, ‘No. no. What we’re finding out is you’ve got to keep his voice on a very narrow ban of inflection because he ain’t human, really.’ So, that was the answer.”</p>
+    </div>
+
+    <div class="soundtrack-box">
+        <h2 class="char-title">Best Song From The Series</h2>
+
+        <div class="audio-row">
+            <button class="play-btn" onclick="document.getElementById('audio').play();">
+                ▶
+            </button>
+            <span class="song-title">“Duel Of The Fates”</span>
+        </div>
+		<p>John Williams blends a driving orchestral rhythm with powerful choral vocals, creating a track that feels huge, dangerous, and mythic. It instantly raises the intensity of any scene it’s in and is one of the most recognizable pieces in the whole franchise.</p>
+
+        <audio id="audio">
+            <source src="audio/starwarsaudio.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</div>
 <div class="character-row">
 
 <div class="char-box">

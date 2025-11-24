@@ -8,46 +8,53 @@
 }
 
 body {
-	background: url("movie bg.png") no-repeat fixed top right;
+  background: url("movie bg.png") no-repeat fixed top right;
 }
-img {
+
+body > img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 40%;
 }
+
 header {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .h1 {
-    color: #E87A84;
-    font-family: "Lucida Grande";
-    font-size: 30px;
-    text-align: center;
-}
-.main-navigation {
-	font-size: 16px;
-	font-weight: 400;
-	border-bottom: 1px rgba(237,124,134,1.00);
-	font-family: sans-serif;
-	}
-.main-navigation ul {
-	margin: 0 auto;
-}
-.main-navigation ul li {
-	display: inline-block;
-}
-.main-navigation ul li a {
-	padding: 17px 37px;
-	text-decoration: none;
-	display: inline-block;
-	color: white;
-}
-.main-navigation ul li a:hover {
-	text-decoration:underline;
+  color: #E87A84;
+  font-family: "Lucida Grande";
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
+.main-navigation {
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px rgba(237,124,134,1.00);
+  font-family: sans-serif;
+}
+
+.main-navigation ul {
+  margin: 0 auto;
+}
+
+.main-navigation ul li {
+  display: inline-block;
+}
+
+.main-navigation ul li a {
+  padding: 17px 37px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.main-navigation ul li a:hover {
+  text-decoration: underline;
+}
 
 /* Watchlist Section */
 main {
@@ -77,9 +84,11 @@ main {
 }
 
 .watchlist-card h3 {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* FIX: Remove dark overlay tint */
+  background-color: #FFD1A1; 
   padding: 10px;
   font-size: 1.1rem;
+  color: white;
 }
 
 .watchlist-card img {
@@ -108,10 +117,8 @@ main {
     font-family: "Lucida Grande";
     font-size: 30px;
   }
-} /* ← THIS closes the media query!! */
+} /* ← FIX: added missing bracket so footer styles apply correctly */
 
-
-/* Footer — now it works on all screen sizes */
 .footer {
   background: #E87A84;
   padding: 15px 0;     
@@ -143,3 +150,4 @@ main {
 .footer-links a:hover {
   color: #FFB3BC;
 }
+

@@ -8,6 +8,10 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+}
 
 #container {
   width: 992px;
@@ -51,13 +55,6 @@ img {
 
 .main-navigation ul li a:hover {
   text-decoration: underline;
-}
-
-.h1 {
-  color: white;
-  font-family: "Lucida Grande";
-  font-size: 30px;
-  text-align: left;
 }
 
 .category-section {

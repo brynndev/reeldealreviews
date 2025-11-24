@@ -163,26 +163,48 @@ img {
   background: #FFB3BC;
 }
 
-.fun-fact-box {
-  width: 90%;
+.info-section {
+  display: flex;
+  gap: 25px;
   margin: 40px auto;
+  justify-content: center;
+}
+
+.fun-fact-box,
+.soundtrack-box {
   background: #FFD1A1;
-  padding: 20px 25px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 25px;
+  width: 45%;
+  font-size: 1.1rem;
+  }
+
+.play-btn {
+  background: #E87A84;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.fun-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #ffffff;
+.play-btn:hover {
+  background: #ffb5bd;
 }
 
-.fun-text {
-  font-size: 1rem;
-  opacity: 0.85;
+.audio-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
 }
+
+.song-title {
+  font-weight: bold;
+}
+
 
 .character-highlight {
   width: 90%;
