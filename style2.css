@@ -11,38 +11,48 @@ body {
     margin: 0 auto; 
 }
 img {
-    display: block;
-    margin: 0 auto;
-    width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
+
 .h1 {
     color: white;
     font-family: "Lucida Grande";
     font-size: 30px;
     text-align: center;
 }
-
 .main-navigation {
-	font-size: 16px;
-	font-weight: 400;
-	border-bottom: 1px rgba(237,124,134,1.00);
-	font-family: sans-serif;
-	}
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px rgba(237,124,134,1.00);
+    font-family: sans-serif;
+    text-align: center; /* THIS centers inline-block items */
+    margin-top: 10px;
+}
+
 .main-navigation ul {
-	margin: 0 auto;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .main-navigation ul li {
-	display: inline-block;
+    display: inline-block; /* SAME AS GOOD ONE */
 }
+
 .main-navigation ul li a {
-	padding: 17px 37px;
-	text-decoration: none;
-	display: inline-block;
-	color: white;
+    padding: 17px 37px; /* SAME spacing as good one */
+    text-decoration: none;
+    display: inline-block;
+    color: white;
 }
+
 .main-navigation ul li a:hover {
-	text-decoration:underline;
+    text-decoration: underline;
 }
+
 
 .h1 {
 	color:rgba(255,255,255,1.00);
@@ -70,7 +80,6 @@ img {
   width: 48%;
 }
 
-/* Inputs */
 input, textarea {
   width: 100%;
   padding: 10px;

@@ -25,7 +25,30 @@ function moveCarousel(direction) {
   track.style.transform = `translateX(-${position * itemWidth}px)`;
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll('.star-rating span');
+    const output = document.querySelector('.rating-output');
 
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = this.getAttribute('data-value');
+
+            // Clear all stars
+            stars.forEach(s => s.classList.remove('selected'));
+
+            // Fill stars up to rating
+            stars.forEach(s => {
+                if (s.getAttribute('data-value') <= rating) {
+                    s.classList.add('selected');
+                }
+            });
+
+            output.textContent = `You rated this series: ${rating} / 5 ⭐`;
+        });
+    });
+});
+</script>
 <body>
 	<header>
 	 <img src="images/logo.png" alt="Reel Deal Logo" width="600" height="300">
@@ -159,7 +182,17 @@ function moveCarousel(direction) {
     </div>
 </div>
 	</div>
-	
+		<div class="rating-section">
+    <h2>What do you rate this series?</h2>
+    <div class="star-rating">
+        <span data-value="1">&#9733;</span>
+        <span data-value="2">&#9733;</span>
+        <span data-value="3">&#9733;</span>
+        <span data-value="4">&#9733;</span>
+        <span data-value="5">&#9733;</span>
+    </div>
+    <p class="rating-output"></p>
+</div>
 	   <footer class="footer">
         <div class="footer-content">
             <p>© 2025 Reel Deal Reviews</p>

@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/* CSS Document */
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,12 @@ body > img {
   margin: 0 auto;
   width: 40%;
 }
-
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -31,32 +35,27 @@ header {
 }
 
 .main-navigation {
-  font-size: 16px;
-  font-weight: 400;
-  border-bottom: 1px rgba(237,124,134,1.00);
-  font-family: sans-serif;
-}
-
+	font-size: 16px;
+	font-weight: 400;
+	border-bottom: 1px rgba(237,124,134,1.00);
+	font-family: sans-serif;
+	}
 .main-navigation ul {
-  margin: 0 auto;
+	margin: 0 auto;
 }
-
 .main-navigation ul li {
-  display: inline-block;
+	display: inline-block;
 }
-
 .main-navigation ul li a {
-  padding: 17px 37px;
-  text-decoration: none;
-  display: inline-block;
-  color: white;
+	padding: 17px 37px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
 }
-
 .main-navigation ul li a:hover {
-  text-decoration: underline;
+	text-decoration:underline;
 }
 
-/* Watchlist Section */
 main {
   padding: 40px 20px;
 }
@@ -84,7 +83,6 @@ main {
 }
 
 .watchlist-card h3 {
-  /* FIX: Remove dark overlay tint */
   background-color: #FFD1A1; 
   padding: 10px;
   font-size: 1.1rem;
@@ -95,29 +93,6 @@ main {
   width: 100%;
   display: block;
 }
-
-@media (max-width: 768px) {
-  nav ul {
-    gap: 10px;
-    font-size: 0.9rem;
-  }
-
-  .watchlist-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .watchlist-card {
-    width: 80%;
-    max-width: 300px;
-  }
-
-  .h1 {
-    color: rgba(255,255,255,1.00);
-    font-family: "Lucida Grande";
-    font-size: 30px;
-  }
-} /* ← FIX: added missing bracket so footer styles apply correctly */
 
 .footer {
   background: #E87A84;

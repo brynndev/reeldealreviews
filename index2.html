@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Reel Deal Reviews</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reel Deal Reviews • Contact</title>
 <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
 
-<img src="images/logo.png" alt="" width="600" class="logo">
+<img src="images/logo.png" margin="auto" alt="" width="600" height="300">
 
-<nav class="main-navigation" align="center">
+<nav class="main-navigation">
     <ul>
         <li><a href="index2.html">Contact</a></li>
         <li><a href="index3.html">Page To Screen</a></li>
@@ -22,49 +22,51 @@
 </nav>
 
 <main>
-	<h1 class="h1">Contact Me</h1>
-<div class="form-container">
-    <form>
+    <h1 class="h1">Contact Me</h1>
 
-        <div class="form-row">
-            <div class="left-section">
-                <label>Name</label>
-                <input type="text">
+    <div class="form-container">
+        <form>
+            <div class="form-row">
 
-                <label>Email</label>
-                <input type="email">
-  <label>Favorite Movie Genre</label>
-        <div class="genres">
-            <div class="genre-row">
-                <label><input type="radio" name="genre"> Horror</label>
-                <label><input type="radio" name="genre"> Drama</label>
-                <label><input type="radio" name="genre"> Romance</label>
-                <label><input type="radio" name="genre"> Action</label>
+                <div class="left-section">
+                    <label>Name</label>
+                    <input type="text" required>
+
+                    <label>Email</label>
+                    <input type="email" required>
+
+                    <label>Favorite Movie Genre</label>
+                    <div class="genres">
+                        <div class="genre-row">
+                            <label><input type="radio" name="genre"> Horror</label>
+                            <label><input type="radio" name="genre"> Drama</label>
+                            <label><input type="radio" name="genre"> Romance</label>
+                            <label><input type="radio" name="genre"> Action</label>
+                        </div>
+
+                        <div class="genre-row">
+                            <label><input type="radio" name="genre"> Comedy</label>
+                            <label><input type="radio" name="genre"> Thriller</label>
+                            <label><input type="radio" name="genre"> Sci-Fi</label>
+                            <label><input type="radio" name="genre"> Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <label>Message:</label>
+                    <textarea required></textarea>
+                </div>
+
             </div>
 
-            <div class="genre-row">
-                <label><input type="radio" name="genre"> Comedy</label>
-                <label><input type="radio" name="genre"> Thriller</label>
-                <label><input type="radio" name="genre"> Sci-Fi</label>
-                <label><input type="radio" name="genre"> Other</label>
+            <div class="graphic-center">
+                <img src="images/popcorn Background Removed.png" alt="Movie Graphic">
             </div>
-        </div>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
-
-    <div class="right-section">
-        <label>Message:</label>
-        <textarea></textarea>
-    </div>
-</div>
-
-        <div class="graphic-center">
-            <img src="images/popcorn Background Removed.png" alt="Movie Graphics">
-        </div>
-
-        <button type="submit">Submit</button>
-
-    </form>
-</div>
 </main>
 
 <footer class="footer">
